@@ -21,16 +21,16 @@ header {
 }
 
 header h1 {
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 nav ul {
   display: flex;
-  margin-right: .5em;
+  margin-right: 0.5em;
   margin-bottom: -1px;
 }
 
-nav ul li{
+nav ul li {
   border: 1px solid #cacaca;
   margin-right: -1px;
   border-radius: 10px 10px 0 0;
@@ -83,7 +83,6 @@ nav ul li button {
   justify-content: space-evenly;
 }
 
-
 .menu-container {
   border: 1px solid #cacaca;
   border-radius: 15px;
@@ -135,3 +134,8 @@ nav ul li button {
   border-radius: 5px;
 }
 
+.contact-container {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 2em;
+}

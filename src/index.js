@@ -38,7 +38,7 @@ const handleNavBtnOnClick = e => {
   }
 };
 
-contact();
+home();
 homeLi.classList = 'active';
 
 homeBtn.addEventListener('click', handleNavBtnOnClick);
