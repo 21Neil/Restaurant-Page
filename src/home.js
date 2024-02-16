@@ -1,4 +1,4 @@
-import asideImg from './asset/aside-img.jpg';
+import getImg from "./component/getImg";
 
 export default function home() {
   const main = document.querySelector('#content');
@@ -6,7 +6,7 @@ export default function home() {
   const purpose = document.createElement('section');
   const info = document.createElement('div');
   main.appendChild(purpose);
-  main.appendChild(info)
+  main.appendChild(info);
   purpose.classList = 'purpose';
   info.classList = 'info';
 
@@ -21,28 +21,26 @@ export default function home() {
 
   const infoAside = document.createElement('aside');
   const infoContainer = document.createElement('div');
-  const infoImg = document.createElement('img');
   const infoOpen = document.createElement('section');
   const infoLocation = document.createElement('section');
   const openH2 = document.createElement('h2');
   const openP = document.createElement('p');
   const locationH2 = document.createElement('h2');
-  const locationP = document.createElement('p')
+  const locationP = document.createElement('p');
 
   info.appendChild(infoAside);
-  info.appendChild(infoContainer)
-  infoAside.appendChild(infoImg);
-  infoContainer.appendChild(infoOpen)
-  infoContainer.appendChild(infoLocation)
+  info.appendChild(infoContainer);
+  getImg('aside-img').then(img => infoAside.appendChild(img));
+  infoContainer.appendChild(infoOpen);
+  infoContainer.appendChild(infoLocation);
 
-  infoOpen.appendChild(openH2)
-  infoOpen.appendChild(openP)
-  infoLocation.appendChild(locationH2)
-  infoLocation.appendChild(locationP)
+  infoOpen.appendChild(openH2);
+  infoOpen.appendChild(openP);
+  infoLocation.appendChild(locationH2);
+  infoLocation.appendChild(locationP);
 
-  infoImg.src = asideImg;
-  openH2.textContent = 'open'
-  openP.textContent = 'Thu ~ Sun: 10a.m.~10p.m.'
-  locationH2.textContent = 'location'
-  locationP.textContent = '111 Eat Street, Food City, Restaurant'
+  openH2.textContent = 'open';
+  openP.textContent = 'Thu ~ Sun: 10a.m.~10p.m.';
+  locationH2.textContent = 'location';
+  locationP.textContent = '111 Eat Street, Food City, Restaurant';
 }

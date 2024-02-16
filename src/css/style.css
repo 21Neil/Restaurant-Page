@@ -82,3 +82,56 @@ nav ul li button {
   width: 50%;
   justify-content: space-evenly;
 }
+
+
+.menu-container {
+  border: 1px solid #cacaca;
+  border-radius: 15px;
+  width: 40%;
+  margin: auto;
+  margin-top: 5em;
+  padding: 3em 3em 1em 3em;
+  margin-bottom: 1em;
+}
+
+.menu-h2 {
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid #cacaca;
+  padding: 1em;
+  margin: 0;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.menu-section:not(:last-child) {
+  border-bottom: 1px solid #cacaca;
+}
+
+.menu-section article {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu-section article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-section article:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.menu-section article img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+

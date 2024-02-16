@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrestaurant_page=self.webpackChunkrestaurant_page||[]).push([[828],{828:(e,a,p)=>{e.exports=p.p+"f46deb2419b1549a9893.jpg"}}]);
